@@ -1,0 +1,21 @@
+{
+    "name": "Zyenxo-Tele",
+    "version": "3.0",
+    "description": "AI-powered Telegram Bot - Simple, Fast, and Efficient! | KagenouDev",
+    "main": "index.js",
+    "type": "commonjs",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "keywords": [
+        "multi-device"
+    ],
+    "author": "KagenouReal",
+    "license": "MIT",
+    "dependencies": {
+        "fs-extra": "^latest",
+        "node-telegram-bot-api": "^latest",
+        "telegraf": "^latest",
+        "telegram": "^latest"
+    }
+}
