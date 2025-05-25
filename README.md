@@ -1,43 +1,43 @@
 # Zyenxo v3 - Telegram Bot Base
 
-**Zennco v3** adalah base bot Telegram yang ringan, modular, dan open-source. Cocok untuk pengembang yang ingin membuat bot Telegram sendiri dari nol dengan fleksibilitas tinggi.
+**Zennco v3** adalah base bot Telegram yang ringan, modular, dan open-source. Cocok untuk pengembang yang ingin membuat bot telegram sendiri dari nol dengan fleksibilitas tinggi.
 
 ---
 
-## âœ¨ Fitur Utama
+## ✨ Fitur Utama
 
 - Struktur folder rapi dan mudah dikembangkan
 - Sistem command modular (`telegram.js`)
 - Manajemen user premium (`premium.json`)
 - Sistem konfigurasi global (`config.js`)
-- Dibangun menggunakan Telegraf Telegram API
+- Dibangun menggunakan Telegraf API
 - Ringan dan cocok untuk server kecil sekalipun
 - Custom function & handler (`mytelegram.js`)
 
 ---
 
-## ðŸ§¾ Struktur Folder
+## 🧾 Struktur Folder
 
 ```bash
 Zennco/
-â”œâ”€â”€ system/                  # Folder utama sistem
-â”‚   â”œâ”€â”€ telegram.js          # Tempat semua command Telegram
-â”‚   â”œâ”€â”€ config.js            # File konfigurasi (token bot, owner ID, prefix, dll)
-â”‚
-â”œâ”€â”€ system/lib/             # Library custom function
-â”‚   â”œâ”€â”€ mytelegram.js        # Berisi fungsi-fungsi custom
-â”‚   â”œâ”€â”€ premium.js           # Loader database premium
-â”‚
-â”œâ”€â”€ system/database/        # Database lokal
-â”‚   â””â”€â”€ premium.json         # Penyimpanan data user premium
-â”‚
-â”œâ”€â”€ package.json            # Metadata dan dependencies project
-â”œâ”€â”€ index.js                # Entry point utama bot
+├── system/                  # Folder utama sistem
+│   ├── whatsapp.js          # Tempat semua command WhatsApp
+│   ├── config.js            # File konfigurasi (nomor owner, prefix, dll)
+│
+├── system/lib/             # Library custom function
+│   ├── myfunction.js        # Berisi fungsi-fungsi custom
+│   ├── premium.js           # Loader database premium
+│
+├── system/database/        # Database lokal
+│   └── premium.json         # Penyimpanan data user premium
+│
+├── package.json            # Metadata dan dependencies project
+├── index.js                # Entry point utama bot
 ```
 
 ---
 
-## âš™ï¸ Instalasi
+## ⚙️ Instalasi
 
 1. Clone repository:
 ```bash
@@ -57,36 +57,34 @@ npm start
 
 ---
 
-## ðŸ›  Konfigurasi
+## 🛠 Konfigurasi
 
 Edit file `system/config.js` untuk mengatur:
-- Token Bot Telegram
-- ID owner
-- Prefix command
-- Pesan global
+- Nomor owner
+- prefix, msg, tokenbot
 
 ---
 
-## â˜• Contoh Penambahan Command
+## ☕ Contoh Penambahan Command
 
 Di file `system/telegram.js`, kamu bisa menambahkan command seperti berikut:
 
 ```js
 case 'halo':
-  m.reply('Halo, ini Zennco v3 for Telegram');
+  m.reply(m.chat, 'Halo, ini Zennco v3');
   break;
 ```
 
 ---
 
-## ðŸ” Premium System
+## 🔐 Premium System
 
 - Premium user disimpan di `system/database/premium.json`
 - Digunakan oleh handler `premium.js` untuk validasi akses fitur tertentu
 
 ---
 
-## â¤ï¸ Credits
+## ❤️ Credits
 
 > Zennco v3 dikembangkan oleh [Kagenou](https://github.com/kagenouReal) sebagai base awal Telegram bot open-source yang powerful namun tetap simpel.
 
@@ -94,4 +92,4 @@ case 'halo':
 
 ## License
 
-MIT License Â© 2025 Kagenou-DG
+MIT License © 2025 Kagenou-DG
