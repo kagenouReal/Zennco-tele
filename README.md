@@ -21,11 +21,11 @@
 ```bash
 Zennco/
 ├── system/                  # Folder utama sistem
-│   ├── whatsapp.js          # Tempat semua command WhatsApp
+│   ├── telegram.js          # Tempat semua command telegram
 │   ├── config.js            # File konfigurasi (nomor owner, prefix, dll)
 │
 ├── system/lib/             # Library custom function
-│   ├── myfunction.js        # Berisi fungsi-fungsi custom
+│   ├── mytelegram.js        # Berisi fungsi-fungsi custom
 │   ├── premium.js           # Loader database premium
 │
 ├── system/database/        # Database lokal
