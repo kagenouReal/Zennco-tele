@@ -1,45 +1,45 @@
 # Zyenxo v3 - Telegram Bot Base
 
-**Zennco v3** adalah base bot Telegram yang ringan, modular, dan open-source. Cocok untuk pengembang yang ingin membuat bot telegram sendiri dari nol dengan fleksibilitas tinggi.
+**Zennco v3** is a lightweight, modular, and open-source Telegram bot base. Perfect for developers who want to build their own Telegram bot from scratch with high flexibility.
 
 ---
 
-## ✨ Fitur Utama
+## ✨ Main Features
 
-- Struktur folder rapi dan mudah dikembangkan
-- Sistem command modular (`telegram.js`)
-- Manajemen user premium (`premium.json`)
-- Sistem konfigurasi global (`config.js`)
-- Dibangun menggunakan Telegraf API
-- Ringan dan cocok untuk server kecil sekalipun
-- Custom function & handler (`mytelegram.js`)
+- Clean and easy-to-develop folder structure
+- Modular command system (`telegram.js`)
+- Premium user management (`premium.json`)
+- Global configuration system (`config.js`)
+- Built using Telegraf API
+- Lightweight and ideal for small servers
+- Custom functions & handler (`mytelegram.js`)
 
 ---
 
-## 🧾 Struktur Folder
+## 🧾 Folder Structure
 
 ```bash
 Zennco/
-├── system/                  # Folder utama sistem
-│   ├── telegram.js          # Tempat semua command telegram
-│   ├── config.js            # File konfigurasi (nomor owner, prefix, dll)
+├── system/                  # Main system folder
+│   ├── telegram.js          # Contains all Telegram commands
+│   ├── config.js            # Configuration file (owner number, prefix, etc.)
 │
-├── system/lib/             # Library custom function
-│   ├── mytelegram.js        # Berisi fungsi-fungsi custom
-│   ├── premium.js           # Loader database premium
+├── system/lib/              # Custom function libraries
+│   ├── mytelegram.js        # Contains custom functions
+│   ├── premium.js           # Premium database loader
 │
-├── system/database/        # Database lokal
-│   └── premium.json         # Penyimpanan data user premium
+├── system/database/         # Local database
+│   └── premium.json         # Stores premium user data
 │
-├── package.json            # Metadata dan dependencies project
-├── index.js                # Entry point utama bot
+├── package.json             # Project metadata and dependencies
+├── index.js                 # Main entry point of the bot
 ```
 
 ---
 
-## ⚙️ Instalasi
+## ⚙️ Installation
 
-1. Clone repository:
+1. Clone the repository:
 ```bash
 git clone https://github.com/kagenouReal/Zennco-tele.git
 cd Zennco
@@ -50,28 +50,28 @@ cd Zennco
 npm install
 ```
 
-3. Jalankan bot:
+3. Run the bot:
 ```bash
 npm start
 ```
 
 ---
 
-## 🛠 Konfigurasi
+## 🛠 Configuration
 
-Edit file `system/config.js` untuk mengatur:
-- Nomor owner
-- prefix, msg, tokenbot
+Edit the `system/config.js` file to set up:
+- Owner number
+- Prefix, message templates, bot token
 
 ---
 
-## ☕ Contoh Penambahan Command
+## ☕ Example Command
 
-Di file `system/telegram.js`, kamu bisa menambahkan command seperti berikut:
+In the `system/telegram.js` file, you can add a command like this:
 
 ```js
-case 'halo':
-  m.reply(m.chat, 'Halo, ini Zennco v3');
+case 'hello':
+  m.reply(m.chat, 'Hello, this is Zennco v3');
   break;
 ```
 
@@ -79,14 +79,14 @@ case 'halo':
 
 ## 🔐 Premium System
 
-- Premium user disimpan di `system/database/premium.json`
-- Digunakan oleh handler `premium.js` untuk validasi akses fitur tertentu
+- Premium users are stored in `system/database/premium.json`
+- Used by the `premium.js` handler to validate access to specific features
 
 ---
 
 ## ❤️ Credits
 
-> Zennco v3 dikembangkan oleh [Kagenou](https://github.com/kagenouReal) sebagai base awal Telegram bot open-source yang powerful namun tetap simpel.
+> Zennco v3 is developed by [Kagenou](https://github.com/kagenouReal) as an open-source Telegram bot base that is powerful yet simple.
 
 ---
 
