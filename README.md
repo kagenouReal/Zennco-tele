@@ -42,7 +42,7 @@ Zennco/
 1. Clone the repository:
 ```bash
 git clone https://github.com/kagenouReal/Zennco-tele.git
-cd Zennco
+cd Zennco-tele
 ```
 
 2. Install dependencies:
